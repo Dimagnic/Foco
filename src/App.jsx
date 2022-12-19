@@ -1,5 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import FocoEncendido from './img/focoEncendido.png'
+import FocoApagado from './img/focoApagado.png'
+import BotonEncendido from './img/off.png'
+import BotonApagado from './img/on.png'
 import './App.css'
 
 function App() {
@@ -16,11 +19,11 @@ function App() {
     
       <div className='Container'>
         <div className='Container-focus'> 
-          <img className='foco' src={isOn ? "./img/focoEncendido.png" : "./img/focoApagado.png"} alt="" />
+          <img className='foco' src={isOn ? FocoEncendido: FocoApagado} alt="" />
         </div>
         <br />
         <div className='Container-button'>
-          <button className='button' onClick={changeVisible}><img className='interruptor' src={isOn ? "./img/off.png" : "./img/on.png"} alt="" /></button>
+          <button className='button' onClick={changeVisible}><img className='interruptor' src={isOn ? BotonEncendido : BotonApagado} alt="" /></button>
         </div>
       </div>
       
