@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+
+}
+.Container{
+
+  background-color: black;
+  padding: 150px;
+  
+}
+.Container-focus{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container-button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;                
+}
+button{
+
+  background-color: black;
+}
+.interruptor {
+
+  width: 150px;
+  height: 100px;       
+}
+.foco{
+  
+  width: 300px;
+  height: 250px;
+}
